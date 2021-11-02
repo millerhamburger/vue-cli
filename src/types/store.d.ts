@@ -1,0 +1,4 @@
+
+interface State{
+  count: number
+}
