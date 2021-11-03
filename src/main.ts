@@ -3,7 +3,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './routers'
 import store from './stores'
-
+import '@/config/env'
 const app = createApp(App)
 app.use(store)
 app.use(router)

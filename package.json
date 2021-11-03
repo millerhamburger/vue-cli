@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "vite",
+    "dev": "vite --mode debug",
     "build": "vue-tsc --noEmit && vite build",
     "serve": "vite preview"
   },
@@ -28,6 +28,7 @@
     "vue-tsc": "^0.28.10"
   },
   "dependencies": {
+    "axios": "^0.24.0",
     "less": "^4.1.2",
     "vue": "^3.2.20",
     "vue-router": "^4.0.12",

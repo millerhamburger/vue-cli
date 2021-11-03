@@ -6,12 +6,16 @@
 </template>
 
 <script lang="ts" setup>
-import { useRouter } from 'vue-router'
+import { useRouter, useRoute } from 'vue-router'
 import { useStore } from 'vuex'
+import { doSearch } from '../apis/getData'
 const Router = useRouter()
+const Route = useRoute()
 const Store = useStore()
-const handle = () => {
+doSearch().then(res => {
+  console.log(res)
+})
+const handle = (): void => {
   Store.commit('add', 9)
-  // Router.push({ name: 'preview' })
 }
 </script>
