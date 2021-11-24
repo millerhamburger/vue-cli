@@ -1,10 +1,13 @@
-import 'styles/index.less'
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from './routers'
-import store from './stores'
-import '@/config/env'
-const app = createApp(App)
-app.use(store)
-app.use(router)
-app.mount('#app')
+import "styles/index.less";
+import { createApp } from "vue";
+import App from "./App.vue";
+import router from "./routers";
+import store from "./stores";
+import "@/config/env";
+import antd from "ant-design-vue";
+import "ant-design-vue/dist/antd.css";
+const app = createApp(App);
+app.use(store);
+app.use(router);
+app.use(antd);
+app.mount("#app");

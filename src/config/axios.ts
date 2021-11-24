@@ -1,4 +1,4 @@
-import Axios from 'axios'
+import Axios from "axios"
 
 const instance = Axios.create({
   baseURL: (window as any).config.apiHost,

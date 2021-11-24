@@ -1,6 +1,6 @@
 import { defineConfig } from "vite"
-import vue from '@vitejs/plugin-vue'
-import path from 'path'
+import vue from "@vitejs/plugin-vue"
+import path from "path"
 
 export default defineConfig({
   plugins: [vue()],
@@ -15,7 +15,7 @@ export default defineConfig({
   },
   server: {
     proxy: {
-      '/api': 'https://www.qqlykm.cn'
+      "/api": "https://www.qqlykm.cn"
     }
   }
 })

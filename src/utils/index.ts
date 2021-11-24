@@ -1,9 +1,9 @@
 export const isObject = (val: any): boolean => {
-  return val !== null  && typeof(val) === 'object'
+  return val !== null && typeof (val) === "object"
 }
 
 export const isString = (val: any): boolean => {
-  return typeof(val) === 'string'
+  return typeof (val) === "string"
 }
 
 export const isdef = (val: any): boolean => {
