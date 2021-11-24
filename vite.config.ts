@@ -18,4 +18,4 @@ export default defineConfig({
       "/api": "https://www.qqlykm.cn"
     }
   }
-})
+});
